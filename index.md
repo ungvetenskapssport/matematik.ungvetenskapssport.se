@@ -1,1 +1,6 @@
-*Ung Vetenskapssport Matematiker*
+---
+layout: page
+title: Ung Vetenskapssports Matematiker
+---
+
+Hej hej

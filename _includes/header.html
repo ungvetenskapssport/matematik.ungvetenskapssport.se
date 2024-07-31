@@ -1,0 +1,36 @@
+<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand nav-icon" href="/"><img src="/icons/circle-yellow.svg" alt="Home"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav">
+        {% for nav in site.data.pages %}
+        <li {% if page.id==nav.id %} class="active" {% endif %}><a href="{{ nav.url | prepend: site.baseurl }}">{{ nav.name }}</a></li>
+        {% endfor %}
+        <li class="icons-right">
+          <a class="navbar-brand nav-icon" href="{{ site.data.links.uvs }}" target="_blank"><img src="/icons/uvs-logo.svg"></a>
+          <!-- Uncomment these if you want to add links to eg Discord in the top-right of the header
+          <a class="navbar-brand nav-icon" href="{{ site.data.links.discordLink }}" target="_blank"><img src="/imgs/discord.png"></a>
+          <a class="navbar-brand nav-icon" href="{{ site.data.socialmedialinks.instagramLink }}" target="_blank"><img src="/imgs/instagram.png"></a>
+          -->
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div id="div-with-bg" class="jumbotron" style="margin-top: -30px">
+    <div class="container" >
+        <h1><span class="uvs-font">Ung Vetenskapssport</span></h1>
+    </div>
+</div>

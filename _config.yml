@@ -1,0 +1,4 @@
+name: "Ung Vetenskapssport Matematiker"
+permalink: "/blog/:year/:month/:day/:title/"
+timezone: "Europe/Stockholm"
+encoding: "utf-8"

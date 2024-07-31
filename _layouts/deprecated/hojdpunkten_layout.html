@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  {% include head.html %}
+
+    <body>
+        {% include header_adjustable_image.html %}
+        <div id="div-with-bg-img" class="jumbotron" style="margin-top: -20px;">
+            <div class="image-container" style="padding-bottom: 25%;">
+              <img src="/imgs/hojdpunkten_header.png" alt="Image">
+              <div class="text-container" style="left: 50%;text-align: center;top: 2vw;transform: translateX(-50%);font-size: 16vw;height: 11vw;display: block;">
+                <h1 style="
+    font-size: calc(min(7vw,60px));
+">Höjdpunkten</h1>
+              </div>
+              <div class="text-container" style="left: 50%;text-align: center;top: calc(min(10.5vw, 120px));transform: translateX(-50%);">
+                <h1 style="font-weight: normal;font-size: calc(min(2.6vw, 27px));"><em style="
+">En lagtävling i matematisk problemlösning för  högstadiet, gymnasiet och övriga!</em></h1>
+              </div>
+            </div>
+        </div>
+        <div class='container'>
+          <div class='contentWrapper'>
+            <div class="row">
+              {% if hojdpunkten_layout.title %}
+              <h1> {{ hojdpunkten_layout.title }} </h1>
+              <br>
+              {% endif %}
+              {{ content}}
+            </div>
+
+            <div class=row>
+                <hr>
+                {% include footer.html %}
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,161 @@
+.contact-image {
+  border-radius: 0.4em;
+  border: 1px solid #999;
+}
+
+.contact-image-no-border {
+  border-radius: 0.0em;
+  border: 0px solid #999;
+}
+
+.contact-image-doc {
+  border-radius: 0em;
+  border: 0px solid #ddd;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 150ms, transform 150ms, border 150ms;; 
+}
+.contact-image-doc:hover {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  /* transform: scale(1.01); */
+  border: 1px solid #0048ff66;
+}
+
+
+.contact-image-hover {
+  border-radius: 0.4em;
+  border: 1px solid #999;
+  width: 100%;
+  height: 0;  /* see below */
+  padding-bottom: 100%; /* super-cursed hack... */
+  background-image: url('/imgs/other-eventicons/default-personicon.png');
+  background-size: cover;
+  transition: background-image 0.3s ease;
+} 
+.contact-image-hover:hover {
+  background-image: url('/imgs/other-eventicons/default-personicon.png');
+  transition: background-image 0.3s ease;
+} 
+
+
+.thumbnail {
+  word-break: break-word;
+  transition: box-shadow 300ms;
+  /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: auto;
+  margin-bottom: 10px; */
+  /* background-color: #999; */
+}
+.thumbnail:hover {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav {
+  float: none;
+}
+
+.navbar-header {
+  padding-left: 15px;
+}
+.nav-icon {
+  padding: 0;
+  display: flex !important;
+  align-items: center !important;
+}
+.nav-icon img {
+  height: 2em;
+  opacity: 0.85;
+  transition: opacity 100ms;
+}
+.nav-icon:hover img {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .icons-right {
+    float: right !important;
+  }
+  .icons-right .nav-icon {
+    padding: 0;
+    margin-right: 30px;
+  }
+}
+
+
+#un-img {
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  max-width: 300px;
+  width: 40%;
+}
+
+#div-with-bg
+{
+    padding: 0em 1em 1em 1em;
+    background: linear-gradient(#FFFFFF00, #FFFFFFAA, #FFFFFFEE),
+                /* url('/imgs/header.jpeg'); */
+                url('/imgs/niklas-specrel-banner.jpg');
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center 33%;
+    border-radius: 1em;
+}
+
+#div-with-bg::before {
+  content: "";
+  display: block;
+  padding-top: 5%; /* Adjust this value to match your desired aspect ratio */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#div-with-bg-img {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 5px
+}
+
+#div-with-bg-img .image-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Adjust the aspect ratio (height/width) based on your image */
+  overflow: hidden;
+}
+
+#div-with-bg-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+#div-with-bg-img .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#FFFFFF00, #FFFFFFAA, #FFFFFFEE); /* Adjust the gradient colors as needed */
+}
+
+#div-with-bg-img .text-container {
+  position: absolute;
+  left: 10em;
+  bottom: 5em;
+}
+
+#div-with-bg-img .text-container h1 {
+  margin: 0;
+  padding: 0;
+}

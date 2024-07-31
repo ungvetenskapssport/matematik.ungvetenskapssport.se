@@ -1,0 +1,188 @@
+div .contentWrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+table {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+table th {
+	border-width: 1px;
+	padding: 4px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #eeeeee;
+}
+table td {
+	border-width: 1px;
+	padding: 4px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+}
+.buttonMedlem {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	border: 2px solid #1E88E5; /* Dark-blue border */
+	background-color: #1E88E5; /* fill transparently */
+	transition: background-color 0.3s ease-out; /* Transition effect when hovering over the button */
+	border-radius: 10px; /* Rounded corners */
+	font-weight: bold; /* Big bold text */
+	font-size: 18px; /* Adjust font size to your preference */
+	color: #FFFFFF; /* White text */
+	padding: 8px 16px; /* Adjust padding to your preference */
+	text-align: center; /* Center text horizontally */
+	text-decoration: none; /* Remove underline from text if needed */
+	display: inline-block; /* Display as an inline-block element */
+	cursor: pointer; /* Add cursor style to indicate clickability */
+	width: 100%;
+  }
+  @media screen and (max-width: 768px) {
+	.buttonMedlem {
+	  font-size: 16px; /* Decrease font size for screens up to 768px wide (most mobile etc.) */
+	  padding: 5px 10px; /* Also decrease the padding */
+	  border: 1.5px solid #1E88E5; /* Dark-blue border */
+	}
+  }
+  @media screen and (max-width: 456px) {
+	.buttonMedlem {
+	  font-size: 12px; /* Decrease font size for screens up to 768px wide (most mobile etc.) */
+	  padding: 5px 10px; /* Also decrease the padding */
+	  border: 1px solid #1E88E5; /* Dark-blue border */
+	}
+  }
+  .buttonMedlem:hover {
+	background-color: #1E88E500;
+	color: #1E88E5;
+  }
+
+  .buttonInfoLarge {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	border: 2px solid #1E88E5; /* Dark-blue border */
+	background-color: #ffffff; /* fill white */
+	transition: background-color 0.3s ease-out; /* Transition effect when hovering over the button */
+	border-radius: 10px; /* Rounded corners */
+	font-weight: normal; /* Big bold text */
+	font-size: 18px; /* Adjust font size to your preference */
+	color: #1E88E5; /* Blue text */
+	padding: 8px 16px; /* Adjust padding to your preference */
+	text-align: center; /* Center text horizontally */
+	text-decoration: none; /* Remove underline from text if needed */
+	display: inline-block; /* Display as an inline-block element */
+	cursor: pointer; /* Add cursor style to indicate clickability */
+	width: 100%;
+  }
+  @media screen and (max-width: 768px) {
+	.buttonInfoLarge {
+	  font-size: 16px; /* Decrease font size for screens up to 768px wide (most mobile etc.) */
+	  padding: 5px 10px; /* Also decrease the padding */
+	  border: 1.5px solid #1E88E5; /* Dark-blue border */
+	}
+  }
+  @media screen and (max-width: 456px) {
+	.buttonInfoLarge {
+	  font-size: 12px; /* Decrease font size for screens up to 768px wide (most mobile etc.) */
+	  padding: 5px 10px; /* Also decrease the padding */
+	  border: 1px solid #1E88E5; /* Dark-blue border */
+	}
+  }
+  .buttonInfoLarge:hover {
+	background-color: #1E88E510;
+	color: #1E88E5;
+  }
+
+  .buttonInfo {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border: 2px solid #0492c2; /* Dark-blue border */
+	background-color: #1E88E500; /* fill transparently */
+	transition: background-color 0.3s ease-out; /* Transition effect when hovering over the button */
+	border-radius: 10px; /* Rounded corners */
+	font-weight: normal; /* Big bold text */
+	font-size: 16px; /* Adjust font size to your preference */
+	color: #0492c2; /* White text */
+	padding: 2px 2px; /* Adjust padding to your preference */
+	text-align: center; /* Center text horizontally */
+	text-decoration: none; /* Remove underline from text if needed */
+	display: inline-block; /* Display as an inline-block element */
+	cursor: pointer; /* Add cursor style to indicate clickability */
+	width: 100%;
+	hyphens: auto;
+	word-wrap: break-word;
+  }
+  @media screen and (max-width: 768px) {
+	.buttonInfo {
+	  font-size: 12px; /* Decrease font size for screens up to 768px wide (most mobile etc.) */
+	  padding: 2px 2px; /* Also decrease the padding */
+	  border: 1.5px solid #0492c2; /* Dark-blue border */
+	  word-wrap: break-word;
+	}
+  }
+  @media screen and (max-width: 456px) {
+	.buttonInfo {
+	  font-size: 10px; /* Decrease font size for screens up to 768px wide (most mobile etc.) */
+	  padding: 2px 2px; /* Also decrease the padding */
+	  border: 1px solid #0492c2; /* Dark-blue border */
+	  word-wrap: break-word;
+	}
+  }
+  .buttonInfo:hover {
+	background-color: #1E88E520;
+	color: #0492c2;
+  }
+
+  summary {
+    font-style: italic;
+    margin: 0.5em 0.5em 0;
+	cursor: pointer;
+}
+details[open] {
+    padding: 0.5em;
+	font-size: 12px;
+}
+details[open] summary {
+    margin-bottom: 0.1em;
+}
+.overlay-blob {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.85); /* Semi-transparent white overlay */
+  }
+.overlay-text {
+	position: absolute;
+	top: 0;
+    left: 0;
+	padding: 0.4em;
+    width: 95%;
+	top: 50%; /* Adjust to vertically center the text */
+	left: 50%; /* Adjust to horizontally center the text */
+	transform: translate(-50%, -50%); /* Center the text precisely */
+	text-align: center; /* Center-align the text */
+  }
+
+/* UVS font for some titles/text */
+.uvs-font {
+	font-family: 'Trebuchet MS', sans-serif;
+  }
+
+.uvs-title {
+	font-family: 'Trebuchet MS', sans-serif;
+	text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+.button-container {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center vertically */
+}
