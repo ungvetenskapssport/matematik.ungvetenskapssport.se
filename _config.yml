@@ -1,9 +1,9 @@
 title: Ung Vetenskapssports Matematiker
 email: uvs-matematiker@ungvetenskapssport.se
 description: >- 
-  Ung Vetenskapssports Matematiker är en ideell förening som grundades 2023. Syftet är enligt ändamålsparagrafen att “främja intresset för matematik och därtill relaterade vetenskapstävlingar bland unga”. Vår verksamhet består främst av att arrangera läger och tävlingar i matematik runt om i landet, ofta i samarbete med olika organisationer och universitet. 
+
 baseurl: ""
 url: "https://matematik.ungvetenskapssport.se/"
-theme: minima
+permalink: /:categories/:year/:month/:day/:title/
 
 markdown: kramdown
